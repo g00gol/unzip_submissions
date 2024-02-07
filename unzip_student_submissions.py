@@ -38,7 +38,6 @@ def get_student_names(skip, number_of_students, step=1):
                 print(f"Skipping {name}.")
             else:
                 clean_name = re.sub(r"[^a-zA-Z,]", "", name)
-                print(clean_name)
                 last_name, first_name = clean_name.split(',')
                 formatted_name = f"{last_name.lower()}{first_name.lower()}"
                 student_names.add(formatted_name)
